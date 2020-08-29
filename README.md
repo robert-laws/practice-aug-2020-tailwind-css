@@ -4,13 +4,25 @@ practice using Tailwind CSS for app development
 
 ---
 
-## Project
+## Introduction
 
-### Concept
+#### The backstory
+
+...
+
+#### The Problem
+
+...
+
+#### The Solution
 
 Simple To-Do App that allows a user to login and view, create, update, and delete their To-Dos. Each To-Do list can have keywords that are used as flags and group together multiple lists.
 
-### Requirements
+#### Technologies Used
+
+...
+
+#### Requirements and Considerations
 
 - Users will be able to sign-up and login to the App
 
