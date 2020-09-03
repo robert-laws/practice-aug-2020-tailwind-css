@@ -22,9 +22,13 @@ My To Do app is not anything radically different than similar apps. It allows a 
 
 Making use of Firebase Auth will provide an easy solution for user sign up and authentication. Firestore will allow for content to be saved to a data file and retrieved when requested. React will act as the user interface for user interactions and rendering content. The app makes use of the React Hooks libraries, including the Context API to maintain state throughout use of the app. Finally, Tailwind CSS is good for handling the styling of UI layout and components.
 
+The app supports user browsing to a handful of different pages. The react-router-dom package adds this functionality to the app.
+
 #### Technologies Used
 
 - React
+
+- React-Router-Dom
 
 - Firebase
 
