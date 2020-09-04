@@ -1,28 +1,20 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import Logo from './Logo';
+import Navigation from './Navigation';
+import Image from '../components/Image';
+import logoImg from '../images/logo.png';
 
 const Header = () => {
   return (
     <header className='flex flex-row items-center px-10 bg-gray-200 h-16'>
-      <div className='logo flex-initial'>
-        <NavLink className='mx-6 hover:text-red-400' exact to='/'>
-          Logo - Home
-        </NavLink>
-      </div>
-      <nav className='flex-auto flex justify-end'>
-        <NavLink className='mx-6 hover:text-red-400' to='todos'>
-          To Do Lists
-        </NavLink>
-        <NavLink className='mx-6 hover:text-red-400' to='profile'>
-          Profile
-        </NavLink>
-        <NavLink className='mx-6 hover:text-red-400' to='keywords'>
-          Keywords
-        </NavLink>
-        <NavLink className='mx-6 hover:text-red-400' to='about'>
-          About
-        </NavLink>
-      </nav>
+      <Logo logoStyles='logo flex-initial'>
+        <Image
+          srcFile={logoImg}
+          imgStyles={{ height: '50px' }}
+          alt='To Do App Logo'
+        />
+      </Logo>
+      <Navigation navStyles='flex-auto flex justify-end' />
     </header>
   );
 };
