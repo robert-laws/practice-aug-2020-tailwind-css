@@ -7,11 +7,13 @@ import Keywords from './pages/Keywords';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
 
+import Header from './sections/Header';
+
 function App() {
   return (
     <Router>
       <div className='App'>
-        <header>header</header>
+        <Header />
         <main>
           <Switch>
             <Route exact path='/' component={Login} />
@@ -22,7 +24,7 @@ function App() {
             <Route path='*' component={NotFound} />
           </Switch>
         </main>
-        <footer>footer</footer>
+        <footer>Footer</footer>
       </div>
     </Router>
   );

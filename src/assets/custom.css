@@ -5,9 +5,13 @@
   flex-direction: column;
 }
 
-header {
+/* header {
   flex: 0 1 150px;
   background-color: bisque;
+} */
+
+.active {
+  color: red;
 }
 
 main {
