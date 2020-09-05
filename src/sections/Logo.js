@@ -1,7 +1,7 @@
 import React from 'react';
-import NavigationLink from '../components/NavigationLink';
+import { NavigationLink } from '../components/ui';
 
-const Logo = ({ logoStyles, children }) => {
+export const Logo = ({ logoStyles, children }) => {
   return (
     <div className={logoStyles}>
       <NavigationLink
@@ -14,5 +14,3 @@ const Logo = ({ logoStyles, children }) => {
     </div>
   );
 };
-
-export default Logo;

@@ -1,13 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Login from './pages/Login';
-import TodoLists from './pages/TodoLists';
-import Profile from './pages/Profile';
-import Keywords from './pages/Keywords';
-import About from './pages/About';
-import NotFound from './pages/NotFound';
-
-import Header from './sections/Header';
+import { Header } from './sections';
+import { About, Keywords, Login, Profile, NotFound, TodoLists } from './pages';
 
 function App() {
   return (

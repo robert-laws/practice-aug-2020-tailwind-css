@@ -1,7 +1,7 @@
 import React from 'react';
-import NavigationLink from '../components/NavigationLink';
+import { NavigationLink } from '../components/ui';
 
-const Navigation = ({ navStyles }) => {
+export const Navigation = ({ navStyles }) => {
   return (
     <nav className={navStyles}>
       <NavigationLink styles='mx-6 hover:text-red-400' location='todos'>
@@ -19,5 +19,3 @@ const Navigation = ({ navStyles }) => {
     </nav>
   );
 };
-
-export default Navigation;
