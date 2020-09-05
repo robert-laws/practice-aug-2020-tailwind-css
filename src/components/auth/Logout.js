@@ -10,7 +10,11 @@ const Logout = () => {
     }
   };
 
-  return <button onClick={logoutUser}>Logout</button>;
+  return (
+    <button className='mx-6 hover:text-red-400' onClick={logoutUser}>
+      Logout
+    </button>
+  );
 };
 
 export default Logout;
