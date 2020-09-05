@@ -6,7 +6,7 @@ export const Logo = ({ logoStyles, children }) => {
     <div className={logoStyles}>
       <NavigationLink
         styles='mx-6 hover:text-red-400'
-        exact='true'
+        exact={true}
         location='/'
       >
         {children}

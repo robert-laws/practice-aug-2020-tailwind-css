@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { NavigationLink } from '../components/ui';
+import Logout from '../components/auth/Logout';
 import AuthContext from '../context/auth/authContext';
 
 export const Navigation = ({ navStyles }) => {
@@ -19,13 +20,21 @@ export const Navigation = ({ navStyles }) => {
           <NavigationLink styles='mx-6 hover:text-red-400' location='keywords'>
             My Keywords
           </NavigationLink>
+          <NavigationLink styles='mx-6 hover:text-red-400' location='about'>
+            About Us
+          </NavigationLink>
+          <Logout />
         </>
       ) : (
-        ''
+        <>
+          <NavigationLink styles='mx-6 hover:text-red-400' location='about'>
+            About Us
+          </NavigationLink>
+          <NavigationLink styles='mx-6 hover:text-red-400' location='/'>
+            Login
+          </NavigationLink>
+        </>
       )}
-      <NavigationLink styles='mx-6 hover:text-red-400' location='about'>
-        About Us
-      </NavigationLink>
     </nav>
   );
 };
