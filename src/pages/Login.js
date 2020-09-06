@@ -52,11 +52,14 @@ export const Login = () => {
 
   return (
     <div className='container mx-auto mt-20 flex items-center justify-center'>
-      <div className='w-full items-center justify-center'>
+      <div className='w-6/12 items-center justify-center'>
         <form
           onSubmit={handleSubmit}
           className='bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4'
         >
+          <div className='mb-4'>
+            <h2 className='text-2xl'>Login to the Todo App</h2>
+          </div>
           <div>
             <p className='text-red-500 mt-2 text-xs italic'>
               {errors.loginError}
